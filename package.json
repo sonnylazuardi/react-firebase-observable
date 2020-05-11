@@ -1,0 +1,14 @@
+{
+  "name": "react-firebase-observable",
+  "version": "1.0.0",
+  "description": "Reactjs firebase data observable using mobx",
+  "keywords": [],
+  "main": "src/index.js",
+  "dependencies": {
+    "firebase": "7.14.3",
+    "mobx": "5.8.0",
+    "mobx-react-lite": "0.3.4",
+    "react": "16.7.0-alpha.2"
+  },
+  "devDependencies": {}
+}
