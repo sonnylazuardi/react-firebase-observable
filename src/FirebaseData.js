@@ -35,11 +35,11 @@ function FirebaseApp(config) {
 
   // The Firebase app object
   // https://firebase.google.com/docs/reference/js/firebase.app.App
-  app = initializeApp(config);
+  const app = initializeApp(config);
 
   // The actual database object
   // https://firebase.google.com/docs/reference/js/firebase.database.Database
-  const database = app.database();
+  database = app.database();
 
   // The root ref of the database (top-level)
   // https://firebase.google.com/docs/reference/js/firebase.database.Reference
@@ -64,7 +64,7 @@ function FirebaseApp(config) {
   return { app, database, getRootRef, getRef };
 }
 
-export let app;
+export let database = null;
 
 /**
  * Wraps the Framer.Data object with realtime Firebase support

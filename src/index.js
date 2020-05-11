@@ -1,5 +1,5 @@
 import { observer, useObservable } from "mobx-react-lite";
-import { FirebaseData, app } from "./FirebaseData";
+import { FirebaseData, database } from "./FirebaseData";
 
 let firebaseData = null;
 
@@ -14,4 +14,4 @@ export const useFirebaseObservable = (firebaseConfig, initialState) => {
   return data;
 };
 
-export { observer, app };
+export { observer, database };
