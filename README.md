@@ -18,18 +18,10 @@ export const App = observer(() => {
       <h2>Firebase Observable!</h2>
       <div>{data.question}</div>
       <UserList scores={scores} />
-      <button
-        onClick={() => {
-          data.question = "question A";
-        }}
-      >
+      <button onClick={() => { data.question = "question A" }}>
         Change A
       </button>
-      <button
-        onClick={() => {
-          data.question = "question B";
-        }}
-      >
+      <button onClick={() => { data.question = "question B" }}>
         Change B
       </button>
     </div>
@@ -40,3 +32,11 @@ export const App = observer(() => {
 ### How to Use
 
 Wrap your component with `observer` function, and config your observable firebase inside the observer function
+
+### Read Data
+
+Use the keyname of the data directly: `data.question` it will be binded automatically with the update
+
+### Write Data
+
+Do mutation directly on the data: `data.question = 'new value'`.
